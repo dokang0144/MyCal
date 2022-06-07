@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_marginTop="70dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="첫번째 숫자를 입력하세요"
+        android:id="@+id/et_number_1"/>
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="두번째 숫자를 입력하세요"
+        android:id="@+id/et_number_2"/>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_plus"
+            android:text="+"/>
+        <Button
+            android:layout_marginStart="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_minus"
+            android:text="-"/>
+        <Button
+            android:layout_marginStart="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_multi"
+            android:text="x"/>
+        <Button
+            android:layout_marginStart="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_divide"
+            android:text="/"/>
+        <Button
+            android:layout_marginStart="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_rest"
+            android:text="%"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과"
+        android:id="@+id/tv_result"
+        android:textSize="30sp"/>
+
+    <Button
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초기화"
+        android:id="@+id/btn_init"/>
+</LinearLayout>
